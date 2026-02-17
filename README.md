@@ -32,7 +32,9 @@ Soft probability outputs from the teacher (soft targets)
 
 The total training loss is defined as:
 
-$\mathcal{L}_{total}=\alpha \, \mathcal{L}_{CE}(y, y_s)+(1 - \alpha)\,\mathcal{L}_{KL}\left(\text{Softmax}\left(\frac{z_t}{T}\right),\text{Softmax}\left(\frac{z_s}{T}\right)\right)$
+$$
+\mathcal{L}_{total}=\alpha \, \mathcal{L}_{CE}(y, y_s)+(1 - \alpha)\,\mathcal{L}_{KL}\left(\text{Softmax}\left(\frac{z_t}{T}\right),\text{Softmax}\left(\frac{z_s}{T}\right)\right)
+$$
 
 
 
